@@ -1,0 +1,18 @@
+GET http://localhost:5050/authors
+
+
+#####
+GET http://localhost:5050/authors/byName?authorName=Lewis
+
+#####
+POST http://localhost:5050/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Kim",
+    "surname": "Jong",
+    "password": "strunz123",
+    "email": "thestrunz@gmail.ko",
+    "dob": "01/04/1988",
+    "avatar": "https://www.freepik.com/premium-ai-image/muslim-men-sit-read-books-pray_59122856.htm#query=img&position=47&from_view=keyword&track=sph"
+}

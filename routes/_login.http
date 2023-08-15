@@ -1,0 +1,12 @@
+POST http://localhost:5050/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Kill",
+    "surname": "Song",
+    "password": "trap123",
+    "email": "trapper@gmail.bo",
+    "dob": "01/04/2003",
+    "avatar": "https://www.freepik.com/premium-ai-image/muslim-men-sit-read-books-pray_59122856.htm#query=img&position=47&from_view=keyword&track=sph"
+}
+

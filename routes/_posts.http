@@ -1,0 +1,38 @@
+GET http://localhost:5050/posts
+
+#####
+POST http://localhost:5050/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "category": "animals",
+    "title": "Goats",
+    "cover": "https://picsum.photos/500/300",
+    "readTime": {
+        "value": 2,
+        "unit": "minutes"
+    },
+    "author": {
+        "name": "Poseidon",
+        "avatar": "https://picsum.photos/100/200"
+    },
+    "content": "Lorem ipsum dolor sit amet..." 
+}
+
+#####
+GET http://localhost:5050/posts/64d2939806c04395db00ace3
+
+#####
+PATCH http://localhost:5050/posts/64d2939806c04395db00ace3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "TITOLO qualunque"
+}
+
+#####
+DELETE http://localhost:5050/posts/64da8c08ea6c991d9b0160d5
+
+
+#####
+GET http://localhost:5050/posts/title?postTitle=sh
